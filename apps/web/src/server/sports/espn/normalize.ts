@@ -252,18 +252,28 @@ function leaders(comp: EspnCompetition): Competitor[] {
     .map(toCompetitor);
 }
 
-/** Golf: the tournament is the event; status comes from the event level. */
+/**
+ * Golf: the tournament is the event; status comes from the event level.
+ * ESPN keeps a multi-day tournament "in progress" overnight; when the
+ * round-level status says play is complete, report a break (shown as
+ * "Between rounds") instead of LIVE.
+ */
 function golfTournament(ep: EspnEndpoint, e: EspnEvent): SportsEvent[] {
   const comp = e.competitions?.[0];
   if (!comp) return [];
+  const eventStatus = mapEspnStatus(e.status ?? comp.status);
+  const roundDone = comp.status?.type?.name?.toUpperCase().includes('PLAY_COMPLETE') ?? false;
+  const betweenRounds = eventStatus === 'LIVE' && roundDone;
   return [
     {
       ...baseEvent(ep, ep.league, e.id),
       shape: 'TOURNAMENT',
       name: e.name,
       startTime: comp.startDate ?? comp.date ?? e.date,
-      rawStatus: mapEspnStatus(e.status ?? comp.status),
-      statusDetail: statusDetail(e.status ?? comp.status),
+      rawStatus: betweenRounds ? 'HALFTIME' : eventStatus,
+      statusDetail: betweenRounds
+        ? statusDetail(comp.status) || 'Round complete'
+        : statusDetail(e.status ?? comp.status),
       competitors: leaders(comp).map((c) => ({ ...c, periodScores: undefined })),
       broadcasts: extractBroadcasts([comp]),
       venue: venueOf(comp),

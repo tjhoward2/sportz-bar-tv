@@ -71,9 +71,20 @@ describe('special shapes', () => {
       id: 'espn:PGA:401850915',
       shape: 'TOURNAMENT',
       name: 'Bank of Utah Championship',
-      rawStatus: 'LIVE',
     });
     expect(events[0]?.competitors.map((c) => c.score)).toEqual(['-23', '-22', '-18', '-18', '-18']);
+  });
+
+  it('golf: reports a break, not LIVE, when the round is complete', () => {
+    const board = fixture('golf-tournament') as {
+      events: { competitions: { status: { type: { name: string } } }[] }[];
+    };
+    // The fixture (captured overnight) already has round status PLAY_COMPLETE.
+    expect(board.events[0]?.competitions[0]?.status.type.name).toBe('STATUS_PLAY_COMPLETE');
+    const { events } = normalizeScoreboard(endpoint('PGA'), board, NOW);
+    expect(events[0]?.rawStatus).toBe('HALFTIME');
+    board.events[0]!.competitions[0]!.status.type.name = 'STATUS_IN_PROGRESS';
+    expect(normalizeScoreboard(endpoint('PGA'), board, NOW).events[0]?.rawStatus).toBe('LIVE');
   });
 
   it('F1: flattens the weekend into sessions within 12h lookback', () => {

@@ -13,7 +13,7 @@ export interface AuthIdentity {
   via: 'cookie' | 'bearer';
 }
 
-async function loadActiveUser(uid: string, sv: number): Promise<User | undefined> {
+export async function loadActiveUser(uid: string, sv: number): Promise<User | undefined> {
   const user = await db().user.findUnique({ where: { id: uid } });
   // A bumped sessionVersion (password change, disable) revokes old sessions.
   if (!user || user.status !== 'ACTIVE' || user.sessionVersion !== sv) return undefined;
