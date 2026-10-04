@@ -64,12 +64,12 @@ export function assertSameOrigin(req: Request): void {
   if (!host || originHost !== host) throw forbidden('Cross-site request blocked.');
 }
 
-type Handler = (req: Request) => Promise<Response>;
+type Handler<C> = (req: Request, ctx: C) => Promise<Response>;
 
-export function route(name: string, handler: Handler): Handler {
-  return async (req) => {
+export function route<C = unknown>(name: string, handler: Handler<C>): Handler<C> {
+  return async (req, ctx) => {
     try {
-      return await handler(req);
+      return await handler(req, ctx);
     } catch (err) {
       if (err instanceof ApiError) return errorResponse(err);
       log.error('api.unhandled', {
