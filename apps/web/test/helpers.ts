@@ -1,6 +1,6 @@
 import { db } from '@/server/db';
 
-type Handler = (req: Request) => Promise<Response>;
+type Handler = (req: Request, ctx: never) => Promise<Response>;
 
 export interface CallOptions {
   method?: string;
@@ -10,7 +10,7 @@ export interface CallOptions {
   token?: string;
 }
 
-export async function call(handler: Handler, path: string, opts: CallOptions = {}) {
+export async function call(handler: Handler, path: string, opts: CallOptions = {}, ctx?: unknown) {
   const headers: Record<string, string> = { host: 'localhost:3000', ...opts.headers };
   if (opts.body !== undefined) headers['content-type'] = 'application/json';
   if (opts.cookie) headers.cookie = opts.cookie;
@@ -21,6 +21,7 @@ export async function call(handler: Handler, path: string, opts: CallOptions = {
       headers,
       body: opts.body === undefined ? undefined : JSON.stringify(opts.body),
     }),
+    ctx as never,
   );
   const text = await res.text();
   // Tests poke into response bodies freely; strict typing here adds noise.

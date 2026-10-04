@@ -52,10 +52,10 @@ describe('route wrapper', () => {
     const boom = route('b', async () => {
       throw new Error('db password is hunter2');
     });
-    const r1 = await teapot(req({}));
+    const r1 = await teapot(req({}), undefined);
     expect(r1.status).toBe(418);
     expect(await r1.json()).toEqual({ error: { code: 'TEAPOT', message: 'short and stout' } });
-    const r2 = await boom(req({}));
+    const r2 = await boom(req({}), undefined);
     expect(r2.status).toBe(500);
     expect(JSON.stringify(await r2.json())).not.toContain('hunter2');
   });
