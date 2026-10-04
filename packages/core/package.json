@@ -1,0 +1,14 @@
+{
+  "name": "@sbtv/core",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Platform-agnostic domain logic shared by web and mobile. No React, no Node-only APIs.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run"
+  }
+}

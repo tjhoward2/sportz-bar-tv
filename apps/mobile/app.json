@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "Sportz Bar TV",
+    "slug": "sportz-bar-tv",
+    "scheme": "sportzbartv",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0B0F14",
+    "platforms": ["ios"],
+    "ios": {
+      "bundleIdentifier": "com.bsptv.manager",
+      "supportsTablet": true,
+      "config": { "usesNonExemptEncryption": false }
+    },
+    "plugins": ["expo-router"],
+    "experiments": { "typedRoutes": true }
+  }
+}

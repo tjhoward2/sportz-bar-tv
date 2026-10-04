@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [dev, main]
+  push:
+    branches: [dev, main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Lint, typecheck, test, build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run format:check
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      # Gate only what ships to the server. Expo/Metro build tooling has
+      # known advisories with no non-breaking fix; Dependabot tracks those.
+      - name: Audit web production dependencies
+        run: npm audit --workspace=@sbtv/web --omit=dev --audit-level=high
+
+  mobile:
+    name: iOS bundle compiles
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Bundle with Metro
+        working-directory: apps/mobile
+        run: npx expo export --platform ios --output-dir ../../.expo-export
+        env:
+          CI: '1'
