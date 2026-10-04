@@ -1,13 +1,14 @@
 import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vitest/config';
 
-// Unit tests: no database. DB-backed tests live in *.db.test.ts and run
-// via vitest.db.config.mts (`npm run test:db`).
 export default defineConfig({
   resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) } },
   test: {
-    include: ['src/**/*.test.ts'],
-    exclude: ['src/**/*.db.test.ts'],
+    include: ['src/**/*.db.test.ts'],
     setupFiles: ['./test/env.ts'],
+    globalSetup: ['./test/db-global-setup.ts'],
+    // Tests share one database; run files one at a time.
+    fileParallelism: false,
+    testTimeout: 30_000,
   },
 });

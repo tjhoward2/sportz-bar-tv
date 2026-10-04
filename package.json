@@ -18,7 +18,10 @@
     "format:check": "prettier --check .",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "test": "npm run test --workspaces --if-present",
-    "check": "npm run format:check && npm run lint && npm run typecheck && npm run test"
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run test",
+    "test:db": "npm run test:db -w @sbtv/web",
+    "db:migrate": "npm run db:migrate -w @sbtv/web",
+    "db:seed": "npm run db:seed -w @sbtv/web"
   },
   "devDependencies": {
     "@eslint/js": "9.39.5",
@@ -32,5 +35,9 @@
     "typescript": "6.0.3",
     "typescript-eslint": "8.71.0",
     "vitest": "5.0.3"
+  },
+  "overrides": {
+    "deepmerge-ts": "8.0.2",
+    "mysql2": "3.24.5"
   }
 }

@@ -11,8 +11,9 @@ Read before touching git, GitHub or dependencies in this repo.
 
 1. `git fetch origin`
 2. `git checkout -b claude/<short-name> origin/dev`
-3. Make the change. Run `npm run check` (format, lint, typecheck, tests) and
-   `npm run build` before pushing. Both must pass.
+3. Make the change. Run `npm run check` (format, lint, typecheck, tests),
+   `npm run test:db` (needs Postgres; see README) and `npm run build`
+   before pushing. All must pass.
 4. Push and open a PR with **base `dev`**.
 5. CI must be green before asking for review.
 6. Promotion `dev → main` happens only when the user asks ("promote dev").
@@ -36,6 +37,21 @@ Read before touching git, GitHub or dependencies in this repo.
   app. Nothing outside an adapter knows their payload shapes.
 - Never display a channel number that isn't in a curated table. Unknown means
   "CHECK GUIDE", not a guess.
+
+## Database
+
+- Schema changes go through `npm run db:migrate` (creates a migration).
+  Never edit an applied migration; add a new one. CI fails if
+  `schema.prisma` and the migrations drift apart.
+- Migrations must be backward compatible with the running code
+  (expand → deploy → contract), since Vercel deploys and migrations don't
+  happen in the same instant.
+
+## Auth & security
+
+- Every API route that needs a user calls `requireAuthIdentity(req)`.
+- Secrets are hashed at rest (passwords: bcrypt; reset/invite tokens:
+  SHA-256). Never log tokens, passwords or personal data.
 
 ## Dependencies
 
