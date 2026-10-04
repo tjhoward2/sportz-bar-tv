@@ -28,6 +28,23 @@ npm run build        # production build of the web app
 
 Health check: `GET /api/health` returns `{"status":"ok", ...}`.
 
+## Local database
+
+```bash
+# Postgres 16 on localhost:5432 (Docker example)
+docker run -d --name sbtv-pg -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust postgres:16
+createdb -h localhost -U postgres sbtv_dev
+createdb -h localhost -U postgres sbtv_test
+
+cp .env.example apps/web/.env.local   # then fill in the secrets
+npm run db:migrate                    # apply migrations
+npm run db:seed                       # demo bar + 3 accounts
+TEST_DATABASE_URL=postgresql://postgres@localhost:5432/sbtv_test npm run test:db
+```
+
+Demo accounts (local only): `owner@cascade.bar`, `manager@cascade.bar`,
+`bartender@cascade.bar`, password `cascade-demo-1234`.
+
 ## Environment variables
 
 See `.env.example`. Copy it to `apps/web/.env.local` for local development.

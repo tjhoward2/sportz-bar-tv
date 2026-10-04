@@ -18,6 +18,18 @@ jobs:
     name: Lint, typecheck, test, build
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: sbtv_test
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      TEST_DATABASE_URL: postgresql://postgres:postgres@localhost:5432/sbtv_test
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -29,6 +41,16 @@ jobs:
       - run: npm run lint
       - run: npm run typecheck
       - run: npm test
+      - name: Database tests (real Postgres)
+        run: npm run test:db
+      - name: Migrations match the schema
+        working-directory: apps/web
+        run: |
+          PGPASSWORD=postgres psql -h localhost -U postgres -c 'CREATE DATABASE sbtv_shadow'
+          npx prisma migrate diff --from-migrations prisma/migrations --to-schema prisma/schema.prisma --exit-code
+        env:
+          DATABASE_URL: ${{ env.TEST_DATABASE_URL }}
+          SHADOW_DATABASE_URL: postgresql://postgres:postgres@localhost:5432/sbtv_shadow
       - run: npm run build
       # Gate only what ships to the server. Expo/Metro build tooling has
       # known advisories with no non-breaking fix; Dependabot tracks those.

@@ -30,3 +30,4 @@ apps/mobile/android/
 *.log
 .vercel
 .expo-export
+src/generated/

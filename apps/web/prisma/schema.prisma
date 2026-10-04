@@ -1,0 +1,174 @@
+// Data model (PRD §2). TV/streaming config is per user, not per venue.
+// JSON columns are validated with zod at the API boundary
+// (src/server/settings.ts); the DB never sees unvalidated shapes.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum UserStatus {
+  ACTIVE
+  DISABLED
+}
+
+enum MembershipRole {
+  BUSINESS_ADMIN
+  STAFF
+}
+
+enum InvitationStatus {
+  PENDING
+  ACCEPTED
+  REVOKED
+}
+
+enum ReferralStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+model Business {
+  id          String       @id @default(cuid())
+  name        String
+  ownerUserId String?
+  notes       String?
+  address     String?
+  city        String?
+  state       String?
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  memberships Membership[]
+  invitations Invitation[]
+  referrals   Referral[]
+}
+
+model User {
+  id                 String     @id @default(cuid())
+  /// Always stored lowercased and trimmed.
+  email              String     @unique
+  passwordHash       String
+  firstName          String?
+  lastName           String?
+  isSuperAdmin       Boolean    @default(false)
+  mustChangePassword Boolean    @default(false)
+  status             UserStatus @default(ACTIVE)
+  /// Bumped on password change or disable; invalidates every cookie and JWT.
+  sessionVersion     Int        @default(0)
+  lastLoginAt        DateTime?
+  loginCount         Int        @default(0)
+  invitedByUserId    String?
+  welcomeDismissedAt DateTime?
+
+  /// ProviderConfig[] — see @sbtv/core.
+  providersJson     Json     @default("[]")
+  /// StreamingKey[]
+  subscriptionsJson Json     @default("[]")
+  zip               String?
+  timezone          String   @default("America/Los_Angeles")
+  /// Team name substrings, e.g. ["Trail Blazers", "Seahawks"].
+  favoriteTeams     Json     @default("[]")
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  memberships         Membership[]
+  referrals           Referral[]
+  feedback            Feedback[]
+  passwordResetTokens PasswordResetToken[]
+}
+
+model Membership {
+  id         String         @id @default(cuid())
+  userId     String
+  businessId String
+  role       MembershipRole
+  createdAt  DateTime       @default(now())
+  user       User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  business   Business       @relation(fields: [businessId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, businessId])
+  @@index([businessId])
+}
+
+model Invitation {
+  id         String           @id @default(cuid())
+  /// SHA-256 of the token in the invite link; the raw token is never stored.
+  tokenHash  String           @unique
+  email      String?
+  phone      String?
+  firstName  String?
+  lastName   String?
+  businessId String
+  role       MembershipRole
+  status     InvitationStatus @default(PENDING)
+  expiresAt  DateTime
+  acceptedAt DateTime?
+  createdAt  DateTime         @default(now())
+  business   Business         @relation(fields: [businessId], references: [id], onDelete: Cascade)
+
+  @@index([businessId])
+}
+
+model Referral {
+  id           String         @id @default(cuid())
+  email        String
+  firstName    String?
+  lastName     String?
+  note         String?
+  status       ReferralStatus @default(PENDING)
+  referredById String
+  businessId   String
+  createdAt    DateTime       @default(now())
+  referredBy   User           @relation(fields: [referredById], references: [id], onDelete: Cascade)
+  business     Business       @relation(fields: [businessId], references: [id], onDelete: Cascade)
+
+  @@index([businessId])
+  @@index([referredById])
+}
+
+model Feedback {
+  id            String   @id @default(cuid())
+  type          String
+  subject       String
+  message       String
+  screenshotUrl String?
+  currentPage   String?
+  deviceType    String?
+  userId        String
+  userName      String
+  userEmail     String
+  userRole      String
+  createdAt     DateTime @default(now())
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model PasswordResetToken {
+  id        String    @id @default(cuid())
+  /// SHA-256 of the emailed token; the raw token is never stored.
+  tokenHash String    @unique
+  userId    String
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+/// Failed sign-in attempts, for rate limiting. In the DB (not memory) so
+/// the limit holds across Vercel's many server instances.
+model LoginAttempt {
+  id        String   @id @default(cuid())
+  /// Lowercased email.
+  key       String
+  createdAt DateTime @default(now())
+
+  @@index([key, createdAt])
+}
