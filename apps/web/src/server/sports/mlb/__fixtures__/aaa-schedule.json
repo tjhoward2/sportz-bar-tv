@@ -1,0 +1,604 @@
+{
+  "dates": [
+    {
+      "date": "2026-09-01",
+      "games": [
+        {
+          "gamePk": 816317,
+          "gameGuid": "e3ae6591-e0ab-4a8f-8dfb-fa218b68c949",
+          "gameType": "R",
+          "season": "2026",
+          "gameDate": "2026-09-01T20:05:00Z",
+          "officialDate": "2026-08-16",
+          "resumedFrom": "2026-08-16T17:15:00Z",
+          "resumedFromDate": "2026-08-16",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 531,
+                "name": "Scranton/Wilkes-Barre RailRiders",
+                "link": "/api/v1/teams/531"
+              },
+              "leagueRecord": {
+                "wins": 62,
+                "losses": 55,
+                "ties": 0,
+                "pct": ".530"
+              },
+              "score": 2,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 24
+            },
+            "home": {
+              "team": {
+                "id": 1410,
+                "name": "Lehigh Valley IronPigs",
+                "link": "/api/v1/teams/1410"
+              },
+              "leagueRecord": {
+                "wins": 58,
+                "losses": 62,
+                "ties": 0,
+                "pct": ".483"
+              },
+              "score": 4,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 24
+            }
+          },
+          "linescore": {
+            "currentInning": 9,
+            "inningState": "Top",
+            "innings": [
+              {
+                "num": 1,
+                "home": {
+                  "runs": 0
+                },
+                "away": {
+                  "runs": 0
+                }
+              },
+              {
+                "num": 2,
+                "home": {
+                  "runs": 0
+                },
+                "away": {
+                  "runs": 0
+                }
+              },
+              {
+                "num": 3,
+                "home": {
+                  "runs": 0
+                },
+                "away": {
+                  "runs": 0
+                }
+              },
+              {
+                "num": 4,
+                "home": {
+                  "runs": 0
+                },
+                "away": {
+                  "runs": 2
+                }
+              },
+              {
+                "num": 5,
+                "home": {
+                  "runs": 0
+                },
+                "away": {
+                  "runs": 0
+                }
+              },
+              {
+                "num": 6,
+                "home": {
+                  "runs": 0
+                },
+                "away": {
+                  "runs": 0
+                }
+              },
+              {
+                "num": 7,
+                "home": {
+                  "runs": 0
+                },
+                "away": {
+                  "runs": 0
+                }
+              },
+              {
+                "num": 8,
+                "home": {
+                  "runs": 4
+                },
+                "away": {
+                  "runs": 0
+                }
+              },
+              {
+                "num": 9,
+                "home": {},
+                "away": {
+                  "runs": 0
+                }
+              }
+            ]
+          },
+          "venue": {
+            "id": 2797,
+            "name": "PNC Field",
+            "link": "/api/v1/venues/2797"
+          },
+          "broadcasts": [
+            {
+              "id": 6178,
+              "name": "Bally Sports Live",
+              "type": "TV",
+              "language": "en",
+              "isNational": false,
+              "callSign": "BallySport",
+              "broadcastDate": "2026-09-01",
+              "homeAway": "home",
+              "freeGame": false,
+              "availableForStreaming": false,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            },
+            {
+              "id": 6178,
+              "name": "Bally Sports Live",
+              "type": "TV",
+              "language": "en",
+              "isNational": false,
+              "callSign": "BallySport",
+              "broadcastDate": "2026-09-01",
+              "homeAway": "away",
+              "freeGame": false,
+              "availableForStreaming": false,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            },
+            {
+              "id": 1765,
+              "name": "MiLB.TV",
+              "type": "TV",
+              "language": "en",
+              "isNational": false,
+              "callSign": "MiLB.TV",
+              "broadcastDate": "2026-09-01",
+              "homeAway": "away",
+              "freeGame": false,
+              "availableForStreaming": false,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            },
+            {
+              "id": 1765,
+              "name": "MiLB.TV",
+              "type": "TV",
+              "language": "en",
+              "isNational": false,
+              "callSign": "MiLB.TV",
+              "broadcastDate": "2026-09-01",
+              "homeAway": "home",
+              "freeGame": false,
+              "availableForStreaming": true,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            },
+            {
+              "id": 5715,
+              "name": "Audio",
+              "type": "INET",
+              "language": "en",
+              "isNational": false,
+              "sourceUrl": "https://www.milb.com/scranton-wb/fans/audio-listen-live",
+              "callSign": "Audio",
+              "broadcastDate": "2026-09-01",
+              "homeAway": "away",
+              "freeGame": false,
+              "availableForStreaming": false,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            },
+            {
+              "id": 5715,
+              "name": "Audio",
+              "type": "INET",
+              "language": "en",
+              "isNational": false,
+              "sourceUrl": "https://www.milb.com/lehigh-valley/fans/audio-listen-live",
+              "callSign": "Audio",
+              "broadcastDate": "2026-09-01",
+              "homeAway": "home",
+              "freeGame": false,
+              "availableForStreaming": false,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            },
+            {
+              "id": 1,
+              "name": "KXL 750",
+              "type": "AM",
+              "isNational": false,
+              "homeAway": "away",
+              "callSign": "KXL"
+            }
+          ],
+          "isTie": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "E",
+          "tiebreaker": "N",
+          "calendarEventID": "44-816317-2026-09-01",
+          "seasonDisplay": "2026",
+          "dayNight": "day",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 120,
+          "gamesInSeries": 6,
+          "seriesGameNumber": 1,
+          "seriesDescription": "Regular Season",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 815642,
+          "gameGuid": "814a4286-1bb9-42fb-878d-005524e55491",
+          "gameType": "R",
+          "season": "2026",
+          "gameDate": "2026-09-02T22:35:00Z",
+          "officialDate": "2026-09-04",
+          "rescheduleDate": "2026-09-04T20:05:00Z",
+          "rescheduleGameDate": "2026-09-04",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "D",
+            "detailedState": "Postponed",
+            "statusCode": "DI",
+            "startTimeTBD": false,
+            "reason": "Inclement Weather",
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 534,
+                "name": "Rochester Red Wings",
+                "link": "/api/v1/teams/534"
+              },
+              "leagueRecord": {
+                "wins": 81,
+                "losses": 52,
+                "ties": 0,
+                "pct": ".609"
+              },
+              "splitSquad": false,
+              "seriesNumber": 24
+            },
+            "home": {
+              "team": {
+                "id": 552,
+                "name": "Syracuse Mets",
+                "link": "/api/v1/teams/552"
+              },
+              "leagueRecord": {
+                "wins": 70,
+                "losses": 64,
+                "ties": 0,
+                "pct": ".522"
+              },
+              "splitSquad": false,
+              "seriesNumber": 24
+            }
+          },
+          "venue": {
+            "id": 2823,
+            "name": "NBT Bank Stadium",
+            "link": "/api/v1/venues/2823"
+          },
+          "broadcasts": [
+            {
+              "id": 6178,
+              "name": "Bally Sports Live",
+              "type": "TV",
+              "language": "en",
+              "isNational": false,
+              "callSign": "BallySport",
+              "broadcastDate": "2026-09-02",
+              "homeAway": "away",
+              "freeGame": false,
+              "availableForStreaming": false,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            },
+            {
+              "id": 6178,
+              "name": "Bally Sports Live",
+              "type": "TV",
+              "language": "en",
+              "isNational": false,
+              "callSign": "BallySport",
+              "broadcastDate": "2026-09-02",
+              "homeAway": "home",
+              "freeGame": false,
+              "availableForStreaming": false,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            },
+            {
+              "id": 1765,
+              "name": "MiLB.TV",
+              "type": "TV",
+              "language": "en",
+              "isNational": false,
+              "callSign": "MiLB.TV",
+              "broadcastDate": "2026-09-02",
+              "homeAway": "away",
+              "freeGame": false,
+              "availableForStreaming": false,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            },
+            {
+              "id": 1765,
+              "name": "MiLB.TV",
+              "type": "TV",
+              "language": "en",
+              "isNational": false,
+              "callSign": "MiLB.TV",
+              "broadcastDate": "2026-09-02",
+              "homeAway": "home",
+              "freeGame": false,
+              "availableForStreaming": false,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            },
+            {
+              "id": 5715,
+              "name": "Audio",
+              "type": "INET",
+              "language": "en",
+              "isNational": false,
+              "sourceUrl": "https://www.milb.com/syracuse/fans/audio-listen-live",
+              "callSign": "Audio",
+              "broadcastDate": "2026-09-02",
+              "homeAway": "home",
+              "freeGame": false,
+              "availableForStreaming": false,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            },
+            {
+              "id": 5715,
+              "name": "Audio",
+              "type": "INET",
+              "language": "en",
+              "isNational": false,
+              "sourceUrl": "https://www.milb.com/rochester/fans/audio-listen-live",
+              "callSign": "Audio",
+              "broadcastDate": "2026-09-02",
+              "homeAway": "away",
+              "freeGame": false,
+              "availableForStreaming": false,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            }
+          ],
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "E",
+          "tiebreaker": "N",
+          "calendarEventID": "44-815642-2026-09-02",
+          "seasonDisplay": "2026",
+          "dayNight": "night",
+          "scheduledInnings": 7,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 120,
+          "gamesInSeries": 6,
+          "seriesGameNumber": 2,
+          "seriesDescription": "Regular Season",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 816913,
+          "gameGuid": "2df3fc51-f5c4-452c-966c-1f874cd190cd",
+          "gameType": "R",
+          "season": "2026",
+          "gameDate": "2026-09-02T20:10:00Z",
+          "officialDate": "2026-09-02",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "C",
+            "detailedState": "Cancelled",
+            "statusCode": "CO",
+            "startTimeTBD": true,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 533,
+                "name": "Worcester Red Sox",
+                "link": "/api/v1/teams/533"
+              },
+              "leagueRecord": {
+                "wins": 67,
+                "losses": 61,
+                "ties": 0,
+                "pct": ".523"
+              },
+              "splitSquad": false,
+              "seriesNumber": 24
+            },
+            "home": {
+              "team": {
+                "id": 422,
+                "name": "Buffalo Bisons",
+                "link": "/api/v1/teams/422"
+              },
+              "leagueRecord": {
+                "wins": 64,
+                "losses": 68,
+                "ties": 0,
+                "pct": ".485"
+              },
+              "splitSquad": false,
+              "seriesNumber": 24
+            }
+          },
+          "venue": {
+            "id": 2756,
+            "name": "Sahlen Field",
+            "link": "/api/v1/venues/2756"
+          },
+          "broadcasts": [
+            {
+              "id": 6178,
+              "name": "Bally Sports Live",
+              "type": "TV",
+              "language": "en",
+              "isNational": false,
+              "callSign": "BallySport",
+              "broadcastDate": "2026-09-02",
+              "homeAway": "home",
+              "freeGame": false,
+              "availableForStreaming": false,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            },
+            {
+              "id": 6178,
+              "name": "Bally Sports Live",
+              "type": "TV",
+              "language": "en",
+              "isNational": false,
+              "callSign": "BallySport",
+              "broadcastDate": "2026-09-02",
+              "homeAway": "away",
+              "freeGame": false,
+              "availableForStreaming": false,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            },
+            {
+              "id": 1765,
+              "name": "MiLB.TV",
+              "type": "TV",
+              "language": "en",
+              "isNational": false,
+              "callSign": "MiLB.TV",
+              "broadcastDate": "2026-09-02",
+              "homeAway": "home",
+              "freeGame": false,
+              "availableForStreaming": false,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            },
+            {
+              "id": 1765,
+              "name": "MiLB.TV",
+              "type": "TV",
+              "language": "en",
+              "isNational": false,
+              "callSign": "MiLB.TV",
+              "broadcastDate": "2026-09-02",
+              "homeAway": "away",
+              "freeGame": false,
+              "availableForStreaming": false,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            },
+            {
+              "id": 5715,
+              "name": "Audio",
+              "type": "INET",
+              "language": "en",
+              "isNational": false,
+              "sourceUrl": "https://www.milb.com/buffalo/fans/audio-listen-live",
+              "callSign": "Audio",
+              "broadcastDate": "2026-09-02",
+              "homeAway": "home",
+              "freeGame": false,
+              "availableForStreaming": false,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            },
+            {
+              "id": 5715,
+              "name": "Audio",
+              "type": "INET",
+              "language": "en",
+              "isNational": false,
+              "sourceUrl": "https://www.milb.com/worcester/fans/audio-listen-live",
+              "callSign": "Audio",
+              "broadcastDate": "2026-09-02",
+              "homeAway": "away",
+              "freeGame": false,
+              "availableForStreaming": false,
+              "postGameShow": false,
+              "mvpdAuthRequired": false,
+              "freeGameStatus": false
+            }
+          ],
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "E",
+          "tiebreaker": "N",
+          "calendarEventID": "44-816913-2026-09-02",
+          "seasonDisplay": "2026",
+          "dayNight": "day",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 120,
+          "gamesInSeries": 6,
+          "seriesGameNumber": 2,
+          "seriesDescription": "Regular Season",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ]
+    }
+  ]
+}

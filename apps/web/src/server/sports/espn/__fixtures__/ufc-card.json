@@ -1,0 +1,339 @@
+{
+  "day": {
+    "date": "2026-10-03"
+  },
+  "events": [
+    {
+      "id": "600061182",
+      "date": "2026-10-03T20:00Z",
+      "name": "UFC 332: Silva vs. Wang",
+      "shortName": "UFC 332",
+      "competitions": [
+        {
+          "id": "401907089",
+          "date": "2026-10-03T20:00Z",
+          "endDate": "2026-10-03T20:00Z",
+          "type": {
+            "id": "969",
+            "abbreviation": "Welterweight"
+          },
+          "neutralSite": false,
+          "venue": {
+            "id": "3093",
+            "fullName": "Delta Center",
+            "address": {
+              "city": "Salt Lake City",
+              "state": "UT",
+              "country": "USA"
+            },
+            "indoor": true
+          },
+          "competitors": [
+            {
+              "id": "2504639",
+              "type": "athlete",
+              "order": 1,
+              "winner": false,
+              "athlete": {
+                "fullName": "Court McGee",
+                "displayName": "Court McGee",
+                "shortName": "C. McGee"
+              },
+              "records": [
+                {
+                  "name": "overall",
+                  "abbreviation": "TOT",
+                  "type": "total",
+                  "summary": "23-15-0"
+                }
+              ]
+            },
+            {
+              "id": "5290958",
+              "type": "athlete",
+              "order": 2,
+              "winner": true,
+              "athlete": {
+                "fullName": "Eric Nolan",
+                "displayName": "Eric Nolan",
+                "shortName": "E. Nolan"
+              },
+              "records": [
+                {
+                  "name": "overall",
+                  "abbreviation": "TOT",
+                  "type": "total",
+                  "summary": "9-5-0"
+                }
+              ]
+            }
+          ],
+          "status": {
+            "clock": 206,
+            "displayClock": "3:26",
+            "period": 3,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "Final",
+              "detail": "Final",
+              "shortDetail": "Final"
+            },
+            "featured": false
+          },
+          "broadcasts": [
+            {
+              "market": "national",
+              "names": ["Paramount+"]
+            }
+          ],
+          "startDate": "2026-10-03T20:00Z",
+          "geoBroadcasts": [
+            {
+              "type": {
+                "id": "4",
+                "shortName": "Streaming"
+              },
+              "market": {
+                "id": "1",
+                "type": "National"
+              },
+              "media": {
+                "shortName": "Paramount+"
+              },
+              "lang": "en",
+              "region": "us"
+            }
+          ]
+        },
+        {
+          "id": "401907087",
+          "date": "2026-10-04T00:00Z",
+          "endDate": "2026-10-04T00:00Z",
+          "type": {
+            "id": "970",
+            "abbreviation": "Bantamweight"
+          },
+          "neutralSite": false,
+          "venue": {
+            "id": "3093",
+            "fullName": "Delta Center",
+            "address": {
+              "city": "Salt Lake City",
+              "state": "UT",
+              "country": "USA"
+            },
+            "indoor": true
+          },
+          "competitors": [
+            {
+              "id": "4189320",
+              "type": "athlete",
+              "order": 1,
+              "winner": false,
+              "athlete": {
+                "fullName": "Deiveson Figueiredo",
+                "displayName": "Deiveson Figueiredo",
+                "shortName": "D. Figueiredo"
+              },
+              "records": [
+                {
+                  "name": "overall",
+                  "abbreviation": "TOT",
+                  "type": "total",
+                  "summary": "25-8-1"
+                }
+              ]
+            },
+            {
+              "id": "5144008",
+              "type": "athlete",
+              "order": 2,
+              "winner": true,
+              "athlete": {
+                "fullName": "Payton Talbott",
+                "displayName": "Payton Talbott",
+                "shortName": "P. Talbott"
+              },
+              "records": [
+                {
+                  "name": "overall",
+                  "abbreviation": "TOT",
+                  "type": "total",
+                  "summary": "12-1-0"
+                }
+              ]
+            }
+          ],
+          "status": {
+            "clock": 129,
+            "displayClock": "2:09",
+            "period": 1,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "Final",
+              "detail": "Final",
+              "shortDetail": "Final"
+            },
+            "featured": false
+          },
+          "broadcasts": [
+            {
+              "market": "national",
+              "names": ["Paramount+"]
+            }
+          ],
+          "startDate": "2026-10-04T00:00Z",
+          "geoBroadcasts": [
+            {
+              "type": {
+                "id": "4",
+                "shortName": "Streaming"
+              },
+              "market": {
+                "id": "1",
+                "type": "National"
+              },
+              "media": {
+                "shortName": "Paramount+"
+              },
+              "lang": "en",
+              "region": "us"
+            }
+          ]
+        },
+        {
+          "id": "401912278",
+          "date": "2026-10-04T00:00Z",
+          "endDate": "2026-10-04T00:00Z",
+          "type": {
+            "id": "1007",
+            "abbreviation": "W Flyweight"
+          },
+          "neutralSite": false,
+          "venue": {
+            "id": "3093",
+            "fullName": "Delta Center",
+            "address": {
+              "city": "Salt Lake City",
+              "state": "UT",
+              "country": "USA"
+            },
+            "indoor": true
+          },
+          "competitors": [
+            {
+              "id": "4054605",
+              "type": "athlete",
+              "order": 1,
+              "winner": false,
+              "athlete": {
+                "fullName": "Natalia Silva",
+                "displayName": "Natalia Silva",
+                "shortName": "N. Silva"
+              },
+              "records": [
+                {
+                  "name": "overall",
+                  "abbreviation": "TOT",
+                  "type": "total",
+                  "summary": "20-5-1"
+                }
+              ]
+            },
+            {
+              "id": "4215200",
+              "type": "athlete",
+              "order": 2,
+              "winner": false,
+              "athlete": {
+                "fullName": "Wang Cong",
+                "displayName": "Wang Cong",
+                "shortName": "W. Cong"
+              },
+              "records": [
+                {
+                  "name": "overall",
+                  "abbreviation": "TOT",
+                  "type": "total",
+                  "summary": "10-1-0"
+                }
+              ]
+            }
+          ],
+          "status": {
+            "clock": 0,
+            "displayClock": "-",
+            "period": 0,
+            "type": {
+              "id": "139",
+              "name": "STATUS_FIGHTERS_WALKING",
+              "state": "in",
+              "completed": false,
+              "description": "Walkouts",
+              "detail": "Walkouts",
+              "shortDetail": "Walkouts"
+            }
+          },
+          "broadcasts": [
+            {
+              "market": "national",
+              "names": ["Paramount+"]
+            }
+          ],
+          "startDate": "2026-10-04T00:00Z",
+          "geoBroadcasts": [
+            {
+              "type": {
+                "id": "4",
+                "shortName": "Streaming"
+              },
+              "market": {
+                "id": "1",
+                "type": "National"
+              },
+              "media": {
+                "shortName": "Paramount+"
+              },
+              "lang": "en",
+              "region": "us"
+            }
+          ]
+        }
+      ],
+      "venues": [
+        {
+          "id": "3093",
+          "fullName": "Delta Center",
+          "address": {
+            "city": "Salt Lake City",
+            "state": "UT",
+            "country": "USA"
+          }
+        }
+      ],
+      "status": {
+        "type": {
+          "id": "2",
+          "name": "STATUS_IN_PROGRESS",
+          "state": "in",
+          "completed": false,
+          "description": "In Progress",
+          "detail": "In Progress",
+          "shortDetail": "In Progress"
+        }
+      }
+    }
+  ],
+  "provider": {
+    "id": "100",
+    "name": "Draft Kings",
+    "displayName": "Draft Kings",
+    "priority": 1
+  }
+}

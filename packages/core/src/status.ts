@@ -52,7 +52,9 @@ export const LIVE_EARLY_TOLERANCE_MIN = 5;
 
 /**
  * Hours after scheduled start before a non-final event is assumed over.
- * Golf and tennis "events" are multi-day tournaments.
+ * Golf and tennis "events" are multi-day tournaments. MMA and boxing
+ * events are whole cards (prelims through main event, 6–7h); the PRD's 5h
+ * auto-finished a live UFC card in testing on 2026-10-04.
  */
 export const MAX_LIVE_HOURS: Readonly<Record<SportId, number>> = {
   BASKETBALL: 3,
@@ -62,8 +64,8 @@ export const MAX_LIVE_HOURS: Readonly<Record<SportId, number>> = {
   HOCKEY: 3.5,
   SOCCER: 3,
   GOLF: 120,
-  MMA: 5,
-  BOXING: 5,
+  MMA: 8,
+  BOXING: 8,
   TENNIS: 336,
   RACING: 4,
 };

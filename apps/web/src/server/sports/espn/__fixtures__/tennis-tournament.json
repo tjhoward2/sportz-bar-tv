@@ -1,0 +1,525 @@
+{
+  "events": [
+    {
+      "id": "1028-2026",
+      "date": "2026-09-25T04:00Z",
+      "endDate": "2026-10-05T03:59Z",
+      "major": false,
+      "name": "Jingshan Tennis Open",
+      "shortName": "Jingshan Tennis Open",
+      "groupings": [
+        {
+          "grouping": {
+            "id": "2",
+            "slug": "womens-singles",
+            "displayName": "Women's Singles"
+          },
+          "competitions": [
+            {
+              "id": "184198",
+              "date": "2026-10-04T04:30Z",
+              "startDate": "2026-10-04T04:30Z",
+              "status": {
+                "period": 1,
+                "type": {
+                  "id": "1",
+                  "name": "STATUS_SCHEDULED",
+                  "state": "pre",
+                  "completed": false,
+                  "description": "Scheduled",
+                  "detail": "Sun, October 3rd at 12:30 AM EDT",
+                  "shortDetail": "10/4 - 12:30 AM EDT"
+                }
+              },
+              "venue": {
+                "fullName": "Jingshan, China PR",
+                "court": "Center Court"
+              },
+              "notes": [],
+              "geoBroadcasts": [],
+              "broadcasts": [],
+              "competitors": [
+                {
+                  "id": "10858",
+                  "type": "athlete",
+                  "order": 2,
+                  "homeAway": "away",
+                  "curatedRank": {
+                    "current": 6
+                  },
+                  "athlete": {
+                    "displayName": "Alexandra Shubladze",
+                    "shortName": "A. Shubladze",
+                    "fullName": "Alexandra Shubladze"
+                  }
+                },
+                {
+                  "id": "6059",
+                  "type": "athlete",
+                  "order": 1,
+                  "homeAway": "home",
+                  "curatedRank": {
+                    "current": 1
+                  },
+                  "athlete": {
+                    "displayName": "Jessica Bouzas Maneiro",
+                    "shortName": "J. Bouzas Maneiro",
+                    "fullName": "Jessica Bouzas Maneiro"
+                  }
+                }
+              ],
+              "tournamentId": 1028,
+              "type": {
+                "id": "2",
+                "text": "Women's Singles",
+                "slug": "womens-singles"
+              },
+              "round": {
+                "id": "7",
+                "displayName": "Final"
+              },
+              "wasSuspended": false
+            },
+            {
+              "id": "184199",
+              "date": "2026-10-03T05:15Z",
+              "startDate": "2026-10-03T05:15Z",
+              "status": {
+                "period": 2,
+                "type": {
+                  "id": "3",
+                  "name": "STATUS_FINAL",
+                  "state": "post",
+                  "completed": true,
+                  "description": "Final",
+                  "detail": "Final",
+                  "shortDetail": "Final"
+                }
+              },
+              "venue": {
+                "fullName": "Jingshan, China PR",
+                "court": "Center Court"
+              },
+              "notes": [
+                {
+                  "text": "(6) Alexandra Shubladze (RUS) bt (3) Emerson Jones (AUS) 7-5 6-4",
+                  "type": "event"
+                }
+              ],
+              "geoBroadcasts": [],
+              "broadcasts": [],
+              "competitors": [
+                {
+                  "id": "10858",
+                  "type": "athlete",
+                  "order": 2,
+                  "homeAway": "away",
+                  "winner": true,
+                  "curatedRank": {
+                    "current": 6
+                  },
+                  "linescores": [
+                    {
+                      "value": 7,
+                      "winner": true
+                    },
+                    {
+                      "value": 6,
+                      "winner": true
+                    }
+                  ],
+                  "athlete": {
+                    "displayName": "Alexandra Shubladze",
+                    "shortName": "A. Shubladze",
+                    "fullName": "Alexandra Shubladze"
+                  }
+                },
+                {
+                  "id": "12287",
+                  "type": "athlete",
+                  "order": 1,
+                  "homeAway": "home",
+                  "winner": false,
+                  "curatedRank": {
+                    "current": 3
+                  },
+                  "linescores": [
+                    {
+                      "value": 5,
+                      "winner": false
+                    },
+                    {
+                      "value": 4,
+                      "winner": false
+                    }
+                  ],
+                  "athlete": {
+                    "displayName": "Emerson Jones",
+                    "shortName": "E. Jones",
+                    "fullName": "Emerson Jones"
+                  }
+                }
+              ],
+              "tournamentId": 1028,
+              "type": {
+                "id": "2",
+                "text": "Women's Singles",
+                "slug": "womens-singles"
+              },
+              "round": {
+                "id": "6",
+                "displayName": "Semifinal"
+              },
+              "wasSuspended": false
+            },
+            {
+              "id": "184197",
+              "date": "2026-10-03T05:50Z",
+              "startDate": "2026-10-03T05:50Z",
+              "status": {
+                "period": 2,
+                "type": {
+                  "id": "3",
+                  "name": "STATUS_FINAL",
+                  "state": "post",
+                  "completed": true,
+                  "description": "Final",
+                  "detail": "Final",
+                  "shortDetail": "Final"
+                }
+              },
+              "venue": {
+                "fullName": "Jingshan, China PR",
+                "court": "Court 3"
+              },
+              "notes": [
+                {
+                  "text": "(1) Jessica Bouzas Maneiro (ESP) bt Aliona Falei (BLR) 6-3 6-3",
+                  "type": "event"
+                }
+              ],
+              "geoBroadcasts": [],
+              "broadcasts": [],
+              "competitors": [
+                {
+                  "id": "14566",
+                  "type": "athlete",
+                  "order": 2,
+                  "homeAway": "away",
+                  "winner": false,
+                  "linescores": [
+                    {
+                      "value": 3,
+                      "winner": false
+                    },
+                    {
+                      "value": 3,
+                      "winner": false
+                    }
+                  ],
+                  "athlete": {
+                    "displayName": "Aliona Falei",
+                    "shortName": "A. Falei",
+                    "fullName": "Aliona Falei"
+                  }
+                },
+                {
+                  "id": "6059",
+                  "type": "athlete",
+                  "order": 1,
+                  "homeAway": "home",
+                  "winner": true,
+                  "curatedRank": {
+                    "current": 1
+                  },
+                  "linescores": [
+                    {
+                      "value": 6,
+                      "winner": true
+                    },
+                    {
+                      "value": 6,
+                      "winner": true
+                    }
+                  ],
+                  "athlete": {
+                    "displayName": "Jessica Bouzas Maneiro",
+                    "shortName": "J. Bouzas Maneiro",
+                    "fullName": "Jessica Bouzas Maneiro"
+                  }
+                }
+              ],
+              "tournamentId": 1028,
+              "type": {
+                "id": "2",
+                "text": "Women's Singles",
+                "slug": "womens-singles"
+              },
+              "round": {
+                "id": "6",
+                "displayName": "Semifinal"
+              },
+              "wasSuspended": false
+            }
+          ]
+        },
+        {
+          "grouping": {
+            "id": "4",
+            "slug": "womens-doubles",
+            "displayName": "Women's Doubles"
+          },
+          "competitions": [
+            {
+              "id": "184167",
+              "date": "2026-10-02T11:05Z",
+              "startDate": "2026-10-02T11:05Z",
+              "status": {
+                "period": 2,
+                "type": {
+                  "id": "3",
+                  "name": "STATUS_FINAL",
+                  "state": "post",
+                  "completed": true,
+                  "description": "Final",
+                  "detail": "Final",
+                  "shortDetail": "Final"
+                }
+              },
+              "venue": {
+                "fullName": "Jingshan, China PR",
+                "court": "Center Court"
+              },
+              "notes": [
+                {
+                  "text": "Sofya Lansere (RUS) & Alexandra Shubladze (RUS) bt Ya Hsin Lee () & Qiu Yu Ye (CHN) 7-6 (7-5) 6-1",
+                  "type": "event"
+                }
+              ],
+              "geoBroadcasts": [],
+              "broadcasts": [],
+              "competitors": [
+                {
+                  "id": "3401-10858",
+                  "type": "team",
+                  "order": 2,
+                  "homeAway": "away",
+                  "winner": true,
+                  "linescores": [
+                    {
+                      "value": 7,
+                      "tiebreak": 7,
+                      "winner": true
+                    },
+                    {
+                      "value": 6,
+                      "winner": true
+                    }
+                  ],
+                  "roster": {
+                    "displayName": "Sofya Lansere / Alexandra Shubladze",
+                    "shortDisplayName": "S. Lansere / A. Shubladze",
+                    "athletes": [
+                      {
+                        "displayName": "Sofya Lansere",
+                        "shortName": "S. Lansere",
+                        "fullName": "Sofya Lansere"
+                      },
+                      {
+                        "displayName": "Alexandra Shubladze",
+                        "shortName": "A. Shubladze",
+                        "fullName": "Alexandra Shubladze"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "5201-2575",
+                  "type": "team",
+                  "order": 1,
+                  "homeAway": "home",
+                  "winner": false,
+                  "linescores": [
+                    {
+                      "value": 6,
+                      "tiebreak": 5,
+                      "winner": false
+                    },
+                    {
+                      "value": 1,
+                      "winner": false
+                    }
+                  ],
+                  "roster": {
+                    "displayName": "Ya Hsin Lee / Ye Qiu Yu",
+                    "shortDisplayName": "Y. Lee / Q. Ye",
+                    "athletes": [
+                      {
+                        "displayName": "Ya Hsin Lee",
+                        "shortName": "Y. Lee",
+                        "fullName": "Ya Hsin Lee"
+                      },
+                      {
+                        "displayName": "Ye Qiu Yu",
+                        "shortName": "Q. Ye",
+                        "fullName": "Ye Qiu Yu"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "tournamentId": 1028,
+              "type": {
+                "id": "4",
+                "text": "Women's Doubles",
+                "slug": "womens-doubles"
+              },
+              "round": {
+                "id": "6",
+                "displayName": "Semifinal"
+              },
+              "wasSuspended": false
+            },
+            {
+              "id": "184168",
+              "date": "2026-10-03T10:25Z",
+              "startDate": "2026-10-03T10:25Z",
+              "status": {
+                "period": 3,
+                "type": {
+                  "id": "3",
+                  "name": "STATUS_FINAL",
+                  "state": "post",
+                  "completed": true,
+                  "description": "Final",
+                  "detail": "Final",
+                  "shortDetail": "Final"
+                }
+              },
+              "venue": {
+                "fullName": "Jingshan, China PR",
+                "court": "Center Court"
+              },
+              "notes": [
+                {
+                  "text": "Madeleine Brooks (GBR) & Amelia Rajecki (GBR) bt Sofya Lansere (RUS) & Alexandra Shubladze (RUS) 6-7 (5-7) 7-6 (7-1) 1-0 (10-6)",
+                  "type": "event"
+                }
+              ],
+              "geoBroadcasts": [],
+              "broadcasts": [],
+              "competitors": [
+                {
+                  "id": "16558-12959",
+                  "type": "team",
+                  "order": 2,
+                  "homeAway": "away",
+                  "winner": true,
+                  "linescores": [
+                    {
+                      "value": 6,
+                      "tiebreak": 5,
+                      "winner": false
+                    },
+                    {
+                      "value": 7,
+                      "tiebreak": 7,
+                      "winner": true
+                    },
+                    {
+                      "value": 1,
+                      "tiebreak": 10,
+                      "winner": true
+                    }
+                  ],
+                  "roster": {
+                    "displayName": "Madeleine Brooks / Amelia Rajecki",
+                    "shortDisplayName": "M. Brooks / A. Rajecki",
+                    "athletes": [
+                      {
+                        "displayName": "Madeleine Brooks",
+                        "shortName": "M. Brooks",
+                        "fullName": "Madeleine Brooks"
+                      },
+                      {
+                        "displayName": "Amelia Rajecki",
+                        "shortName": "A. Rajecki",
+                        "fullName": "Amelia Rajecki"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "3401-10858",
+                  "type": "team",
+                  "order": 1,
+                  "homeAway": "home",
+                  "winner": false,
+                  "linescores": [
+                    {
+                      "value": 7,
+                      "tiebreak": 7,
+                      "winner": true
+                    },
+                    {
+                      "value": 6,
+                      "tiebreak": 1,
+                      "winner": false
+                    },
+                    {
+                      "value": 0,
+                      "tiebreak": 6,
+                      "winner": false
+                    }
+                  ],
+                  "roster": {
+                    "displayName": "Sofya Lansere / Alexandra Shubladze",
+                    "shortDisplayName": "S. Lansere / A. Shubladze",
+                    "athletes": [
+                      {
+                        "displayName": "Sofya Lansere",
+                        "shortName": "S. Lansere",
+                        "fullName": "Sofya Lansere"
+                      },
+                      {
+                        "displayName": "Alexandra Shubladze",
+                        "shortName": "A. Shubladze",
+                        "fullName": "Alexandra Shubladze"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "tournamentId": 1028,
+              "type": {
+                "id": "4",
+                "text": "Women's Doubles",
+                "slug": "womens-doubles"
+              },
+              "round": {
+                "id": "7",
+                "displayName": "Final"
+              },
+              "wasSuspended": false
+            }
+          ]
+        }
+      ],
+      "status": {
+        "period": 3,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "Final",
+          "detail": "Final",
+          "shortDetail": "Final"
+        }
+      },
+      "venue": {
+        "displayName": "Jingshan, China PR"
+      }
+    }
+  ]
+}

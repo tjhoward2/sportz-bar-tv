@@ -1,0 +1,507 @@
+{
+  "events": [
+    {
+      "id": "401892442",
+      "date": "2026-10-04T17:00Z",
+      "name": "Winnipeg Jets at Detroit Red Wings",
+      "shortName": "WPG @ DET",
+      "competitions": [
+        {
+          "id": "401892442",
+          "date": "2026-10-04T17:00Z",
+          "type": {
+            "id": "1",
+            "abbreviation": "STD"
+          },
+          "neutralSite": false,
+          "venue": {
+            "id": "5404",
+            "fullName": "Little Caesars Arena",
+            "address": {
+              "city": "Detroit",
+              "state": "MI",
+              "country": "USA"
+            },
+            "indoor": true
+          },
+          "competitors": [
+            {
+              "id": "5",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "5",
+                "location": "Detroit",
+                "name": "Red Wings",
+                "abbreviation": "DET",
+                "displayName": "Detroit Red Wings",
+                "shortDisplayName": "Red Wings",
+                "venue": {
+                  "id": "5404"
+                },
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png"
+              },
+              "score": "0",
+              "probables": [
+                {
+                  "name": "probableStartingGoalie",
+                  "displayName": "Probable Starting Goalie",
+                  "shortDisplayName": "Starter",
+                  "abbreviation": "SG",
+                  "playerId": 2590824,
+                  "athlete": {
+                    "id": "2590824",
+                    "fullName": "John Gibson",
+                    "displayName": "John Gibson",
+                    "shortName": "J. Gibson",
+                    "headshot": "https://a.espncdn.com/i/headshots/nhl/players/full/2590824.png",
+                    "jersey": "36",
+                    "position": "G",
+                    "team": {
+                      "id": "5"
+                    }
+                  },
+                  "status": {
+                    "id": "101",
+                    "name": "Expected",
+                    "type": "expected",
+                    "abbreviation": "Expected"
+                  },
+                  "record": ""
+                }
+              ],
+              "curatedRank": {
+                "current": 99
+              },
+              "records": [
+                {
+                  "name": "overall",
+                  "abbreviation": "TOTAL",
+                  "type": "total",
+                  "summary": "0-1-0"
+                },
+                {
+                  "name": "Home",
+                  "abbreviation": "HOME",
+                  "type": "home",
+                  "summary": "0-1-0"
+                },
+                {
+                  "name": "Road",
+                  "abbreviation": "AWAY",
+                  "type": "road",
+                  "summary": "0-0-0"
+                }
+              ]
+            },
+            {
+              "id": "28",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "28",
+                "location": "Winnipeg",
+                "name": "Jets",
+                "abbreviation": "WPG",
+                "displayName": "Winnipeg Jets",
+                "shortDisplayName": "Jets",
+                "venue": {
+                  "id": "1827"
+                },
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png"
+              },
+              "score": "0",
+              "probables": [
+                {
+                  "name": "probableStartingGoalie",
+                  "displayName": "Probable Starting Goalie",
+                  "shortDisplayName": "Starter",
+                  "abbreviation": "SG",
+                  "playerId": 4268767,
+                  "athlete": {
+                    "id": "4268767",
+                    "fullName": "Stuart Skinner",
+                    "displayName": "Stuart Skinner",
+                    "shortName": "S. Skinner",
+                    "headshot": "https://a.espncdn.com/i/headshots/nhl/players/full/4268767.png",
+                    "jersey": "74",
+                    "position": "G",
+                    "team": {
+                      "id": "28"
+                    }
+                  },
+                  "status": {
+                    "id": "101",
+                    "name": "Expected",
+                    "type": "expected",
+                    "abbreviation": "Expected"
+                  },
+                  "record": ""
+                }
+              ],
+              "curatedRank": {
+                "current": 99
+              },
+              "records": [
+                {
+                  "name": "overall",
+                  "abbreviation": "TOTAL",
+                  "type": "total",
+                  "summary": "0-0-1"
+                },
+                {
+                  "name": "Home",
+                  "abbreviation": "HOME",
+                  "type": "home",
+                  "summary": "0-0-1"
+                },
+                {
+                  "name": "Road",
+                  "abbreviation": "AWAY",
+                  "type": "road",
+                  "summary": "0-0-0"
+                }
+              ]
+            }
+          ],
+          "notes": [],
+          "status": {
+            "clock": 0,
+            "displayClock": "0:00",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sun, October 4th at 1:00 PM EDT",
+              "shortDetail": "10/4 - 1:00 PM EDT"
+            }
+          },
+          "broadcasts": [
+            {
+              "market": "national",
+              "names": ["NHL Net"]
+            },
+            {
+              "market": "home",
+              "names": ["DSN"]
+            }
+          ],
+          "startDate": "2026-10-04T17:00Z",
+          "geoBroadcasts": [
+            {
+              "type": {
+                "id": "1",
+                "shortName": "TV"
+              },
+              "market": {
+                "id": "1",
+                "type": "National"
+              },
+              "media": {
+                "shortName": "NHL Net"
+              },
+              "lang": "en",
+              "region": "us"
+            },
+            {
+              "type": {
+                "id": "4",
+                "shortName": "Streaming"
+              },
+              "market": {
+                "id": "2",
+                "type": "Home"
+              },
+              "media": {
+                "shortName": "DSN"
+              },
+              "lang": "en",
+              "region": "us"
+            }
+          ]
+        }
+      ],
+      "status": {
+        "clock": 0,
+        "displayClock": "0:00",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sun, October 4th at 1:00 PM EDT",
+          "shortDetail": "10/4 - 1:00 PM EDT"
+        }
+      }
+    },
+    {
+      "id": "401892443",
+      "date": "2026-10-04T22:00Z",
+      "name": "Utah Mammoth at New York Rangers",
+      "shortName": "UTA @ NYR",
+      "competitions": [
+        {
+          "id": "401892443",
+          "date": "2026-10-04T22:00Z",
+          "type": {
+            "id": "1",
+            "abbreviation": "STD"
+          },
+          "neutralSite": false,
+          "venue": {
+            "id": "1830",
+            "fullName": "Madison Square Garden",
+            "address": {
+              "city": "New York",
+              "state": "NY",
+              "country": "USA"
+            },
+            "indoor": true
+          },
+          "competitors": [
+            {
+              "id": "13",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "13",
+                "location": "New York",
+                "name": "Rangers",
+                "abbreviation": "NYR",
+                "displayName": "New York Rangers",
+                "shortDisplayName": "Rangers",
+                "venue": {
+                  "id": "1830"
+                },
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyr.png"
+              },
+              "score": "0",
+              "probables": [
+                {
+                  "name": "probableStartingGoalie",
+                  "displayName": "Probable Starting Goalie",
+                  "shortDisplayName": "Starter",
+                  "abbreviation": "SG",
+                  "playerId": 3151297,
+                  "athlete": {
+                    "id": "3151297",
+                    "fullName": "Igor Shesterkin",
+                    "displayName": "Igor Shesterkin",
+                    "shortName": "I. Shesterkin",
+                    "headshot": "https://a.espncdn.com/i/headshots/nhl/players/full/3151297.png",
+                    "jersey": "31",
+                    "position": "G",
+                    "team": {
+                      "id": "13"
+                    }
+                  },
+                  "status": {
+                    "id": "101",
+                    "name": "Expected",
+                    "type": "expected",
+                    "abbreviation": "Expected"
+                  },
+                  "record": ""
+                }
+              ],
+              "curatedRank": {
+                "current": 99
+              },
+              "records": [
+                {
+                  "name": "overall",
+                  "abbreviation": "TOTAL",
+                  "type": "total",
+                  "summary": "2-1-0"
+                },
+                {
+                  "name": "Home",
+                  "abbreviation": "HOME",
+                  "type": "home",
+                  "summary": "1-0-0"
+                },
+                {
+                  "name": "Road",
+                  "abbreviation": "AWAY",
+                  "type": "road",
+                  "summary": "1-1-0"
+                }
+              ]
+            },
+            {
+              "id": "129764",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "129764",
+                "location": "Utah",
+                "name": "Mammoth",
+                "abbreviation": "UTA",
+                "displayName": "Utah Mammoth",
+                "shortDisplayName": "Mammoth",
+                "venue": {
+                  "id": "3093"
+                },
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/uta.png"
+              },
+              "score": "0",
+              "probables": [
+                {
+                  "name": "probableStartingGoalie",
+                  "displayName": "Probable Starting Goalie",
+                  "shortDisplayName": "Starter",
+                  "abbreviation": "SG",
+                  "playerId": 3942065,
+                  "athlete": {
+                    "id": "3942065",
+                    "fullName": "Karel Vejmelka",
+                    "displayName": "Karel Vejmelka",
+                    "shortName": "K. Vejmelka",
+                    "headshot": "https://a.espncdn.com/i/headshots/nhl/players/full/3942065.png",
+                    "jersey": "70",
+                    "position": "G",
+                    "team": {
+                      "id": "129764"
+                    }
+                  },
+                  "status": {
+                    "id": "101",
+                    "name": "Expected",
+                    "type": "expected",
+                    "abbreviation": "Expected"
+                  },
+                  "record": ""
+                }
+              ],
+              "curatedRank": {
+                "current": 99
+              },
+              "records": [
+                {
+                  "name": "overall",
+                  "abbreviation": "TOTAL",
+                  "type": "total",
+                  "summary": "2-0-0"
+                },
+                {
+                  "name": "Home",
+                  "abbreviation": "HOME",
+                  "type": "home",
+                  "summary": "1-0-0"
+                },
+                {
+                  "name": "Road",
+                  "abbreviation": "AWAY",
+                  "type": "road",
+                  "summary": "1-0-0"
+                }
+              ]
+            }
+          ],
+          "notes": [],
+          "status": {
+            "clock": 0,
+            "displayClock": "0:00",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sun, October 4th at 6:00 PM EDT",
+              "shortDetail": "10/4 - 6:00 PM EDT"
+            }
+          },
+          "broadcasts": [
+            {
+              "market": "national",
+              "names": ["ESPN+"]
+            },
+            {
+              "market": "home",
+              "names": ["MSG"]
+            },
+            {
+              "market": "away",
+              "names": ["Utah 16"]
+            }
+          ],
+          "startDate": "2026-10-04T22:00Z",
+          "geoBroadcasts": [
+            {
+              "type": {
+                "id": "4",
+                "shortName": "Streaming"
+              },
+              "market": {
+                "id": "1",
+                "type": "National"
+              },
+              "media": {
+                "shortName": "ESPN+",
+                "logo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default.png",
+                "darkLogo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default-dark.png"
+              },
+              "lang": "en",
+              "region": "us"
+            },
+            {
+              "type": {
+                "id": "1",
+                "shortName": "TV"
+              },
+              "market": {
+                "id": "2",
+                "type": "Home"
+              },
+              "media": {
+                "shortName": "MSG"
+              },
+              "lang": "en",
+              "region": "us"
+            },
+            {
+              "type": {
+                "id": "1",
+                "shortName": "TV"
+              },
+              "market": {
+                "id": "3",
+                "type": "Away"
+              },
+              "media": {
+                "shortName": "Utah 16"
+              },
+              "lang": "en",
+              "region": "us"
+            }
+          ]
+        }
+      ],
+      "status": {
+        "clock": 0,
+        "displayClock": "0:00",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sun, October 4th at 6:00 PM EDT",
+          "shortDetail": "10/4 - 6:00 PM EDT"
+        }
+      }
+    }
+  ]
+}
