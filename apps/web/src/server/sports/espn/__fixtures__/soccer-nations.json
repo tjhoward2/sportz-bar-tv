@@ -1,0 +1,143 @@
+{
+  "events": [
+    {
+      "id": "401861119",
+      "date": "2026-10-04T13:00Z",
+      "name": "Lithuania at Azerbaijan",
+      "shortName": "LTU @ AZE",
+      "competitions": [
+        {
+          "id": "401861119",
+          "date": "2026-10-04T13:00Z",
+          "startDate": "2026-10-04T13:00Z",
+          "status": {
+            "clock": 0,
+            "displayClock": "0'",
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sun, October 4th at 9:00 AM EDT",
+              "shortDetail": "Scheduled"
+            }
+          },
+          "venue": {
+            "id": "10745",
+            "fullName": "Neftçi Arena",
+            "address": {
+              "city": "Baku",
+              "country": "Azerbaijan"
+            }
+          },
+          "altGameNote": "UEFA Nations League, Group D2",
+          "group": {
+            "groupId": "14",
+            "name": "Group D2",
+            "abbreviation": "Group D2"
+          },
+          "notes": [],
+          "geoBroadcasts": [
+            {
+              "type": {
+                "id": "1",
+                "shortName": "TV"
+              },
+              "market": {
+                "id": "1",
+                "type": "National"
+              },
+              "media": {
+                "shortName": "FS2"
+              },
+              "lang": "en",
+              "region": "us"
+            }
+          ],
+          "broadcasts": [
+            {
+              "market": "national",
+              "names": ["FS2"]
+            }
+          ],
+          "competitors": [
+            {
+              "id": "581",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": false,
+              "score": "0",
+              "records": [
+                {
+                  "name": "All Splits",
+                  "type": "total",
+                  "summary": "0-2-0",
+                  "abbreviation": "Total"
+                }
+              ],
+              "team": {
+                "id": "581",
+                "abbreviation": "AZE",
+                "displayName": "Azerbaijan",
+                "shortDisplayName": "Azerbaijan",
+                "name": "Azerbaijan",
+                "location": "Azerbaijan",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aze.png",
+                "venue": {
+                  "id": "10034"
+                }
+              }
+            },
+            {
+              "id": "460",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "score": "0",
+              "records": [
+                {
+                  "name": "All Splits",
+                  "type": "total",
+                  "summary": "1-1-0",
+                  "abbreviation": "Total"
+                }
+              ],
+              "team": {
+                "id": "460",
+                "abbreviation": "LTU",
+                "displayName": "Lithuania",
+                "shortDisplayName": "Lithuania",
+                "name": "Lithuania",
+                "location": "Lithuania",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ltu.png",
+                "venue": {
+                  "id": "4793"
+                }
+              }
+            }
+          ],
+          "wasSuspended": false
+        }
+      ],
+      "status": {
+        "clock": 0,
+        "displayClock": "0'",
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sun, October 4th at 9:00 AM EDT",
+          "shortDetail": "Scheduled"
+        }
+      },
+      "venue": {
+        "displayName": "Neftçi Arena"
+      }
+    }
+  ]
+}

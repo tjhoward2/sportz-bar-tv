@@ -14,6 +14,11 @@ describe('toTvNetworkId', () => {
     ['NBA TV', 'NBATV'],
     ['NBA TV HD', 'NBATV'],
     ['MLB Network', 'MLBN'],
+    // Spellings seen in ESPN's live feed (Oct 2026).
+    ['Golf Chnl', 'GOLF'],
+    ['USA Net', 'USA'],
+    ['NFL Net', 'NFLN'],
+    ['NHL Net', 'NHLN'],
     ['Big Ten Network', 'BTN'],
     ['ROOT SPORTS NORTHWEST', 'ROOT_NW'],
     ['KGW-HD', 'NBC'],

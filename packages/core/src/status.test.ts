@@ -59,6 +59,11 @@ describe('computeDisplayStatus', () => {
     expect(at(-181, 'DELAYED', 'BASKETBALL').status).toBe('FINAL');
   });
 
+  it('keeps a full fight card live', () => {
+    expect(at(-6.5 * 60, 'LIVE', 'MMA').status).toBe('LIVE');
+    expect(at(-8.5 * 60, 'LIVE', 'MMA').status).toBe('FINAL');
+  });
+
   it('gives multi-day tournaments room', () => {
     expect(at(-48 * 60, 'LIVE', 'GOLF').status).toBe('LIVE');
     expect(at(-10 * 24 * 60, 'LIVE', 'TENNIS').status).toBe('LIVE');
