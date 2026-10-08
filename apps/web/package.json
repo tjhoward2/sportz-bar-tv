@@ -12,7 +12,8 @@
     "test:db": "vitest run -c vitest.db.config.mts",
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma migrate deploy",
-    "db:seed": "tsx prisma/seed.ts"
+    "db:seed": "tsx prisma/seed.ts",
+    "build:vercel": "prisma migrate deploy && prisma generate && next build"
   },
   "dependencies": {
     "@prisma/adapter-pg": "7.10.0",
